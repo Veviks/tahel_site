@@ -1,0 +1,13 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.idea
+.vscode
+*.swp
+*.swo
+
+# Optional: uncomment if you add large video files and use LFS or host elsewhere
+# videos/*.mp4
+# videos/*.mov
