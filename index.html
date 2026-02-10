@@ -1,31 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tahel – Home</title>
+  <title>אתר לטידי – absTime</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <header class="site-header">
-    <nav class="nav">
-      <a href="index.html" class="nav-link active">Home</a>
-      <a href="about.html" class="nav-link">About</a>
-      <a href="videos.html" class="nav-link">Videos</a>
+<body class="page-intro">
+  <!-- Frame 1: black top bar (1920×116) with nav -->
+  <header class="intro-header">
+    <span class="intro-logo">absTime</span>
+    <nav class="intro-nav">
+      <a href="lineup.html" class="intro-nav-link">LINE UP</a>
+      <a href="unlock.html" class="intro-nav-link">DETAILS</a>
     </nav>
   </header>
 
-  <main class="main">
-    <section class="hero">
-      <h1>Welcome</h1>
-      <p>Your site – we’ll match this to your Figma design.</p>
-      <a href="about.html" class="btn">Learn more</a>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <p>Built with care.</p>
-  </footer>
+  <!-- Full-screen intro video (TDMovieOut / INTRO.mov) -->
+  <div class="intro-video-wrap">
+    <video
+      id="intro-video"
+      class="intro-video"
+      autoplay
+      muted
+      loop
+      playsinline
+      aria-label="absTime intro"
+    >
+      <source src="videos/INTRO.mov" type="video/quicktime">
+      <source src="videos/INTRO.mp4" type="video/mp4">
+    </video>
+    <div class="intro-video-fallback" id="intro-fallback" aria-hidden="true">
+      <span class="intro-fallback-text">absTime</span>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>

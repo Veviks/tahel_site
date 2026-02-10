@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>אתר לטידי – Line up</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-lineup">
+  <!-- Frame 1: same header as intro -->
+  <header class="intro-header">
+    <a href="index.html" class="intro-logo">absTime</a>
+    <nav class="intro-nav">
+      <a href="lineup.html" class="intro-nav-link">LINE UP</a>
+      <a href="unlock.html" class="intro-nav-link">DETAILS</a>
+    </nav>
+  </header>
+
+  <main class="lineup-main">
+    <div class="lineup-grid" role="list">
+      <!-- Column 1 -->
+      <span class="lineup-name" role="listitem" data-video="videos/LIBBY.mp4">Libby</span>
+      <span class="lineup-name" role="listitem" data-video="videos/LI-ON.mp4">Leon</span>
+      <span class="lineup-name" role="listitem" data-video="videos/SAPIR.mp4">Sapir</span>
+      <span class="lineup-name" role="listitem" data-video="videos/RINA.mp4">Rina</span>
+      <span class="lineup-name" role="listitem" data-video="videos/SARAEL.mp4">Sarael</span>
+      <!-- Column 2 -->
+      <span class="lineup-name" role="listitem" data-video="videos/GAL.mp4">Gal</span>
+      <span class="lineup-name" role="listitem" data-video="videos/RACHELY.mp4">Racheli</span>
+      <span class="lineup-name" role="listitem" data-video="videos/OFIR.mp4">Ofir</span>
+      <span class="lineup-name" role="listitem" data-video="videos/OR.mp4">Or</span>
+      <span class="lineup-name" role="listitem" data-video="videos/ALISA.mp4">Alisa</span>
+      <!-- Column 3 -->
+      <span class="lineup-name" role="listitem" data-video="videos/ROY.mp4">Roy</span>
+      <span class="lineup-name" role="listitem" data-video="videos/SHIRAN.mp4">Shiran</span>
+      <span class="lineup-name" role="listitem" data-video="videos/ILAY.mp4">Ilay</span>
+      <span class="lineup-name" role="listitem" data-video="videos/TAHEL.mp4">Tahel</span>
+      <span class="lineup-name" role="listitem" data-video="videos/ADIEL.mp4">Adiel</span>
+      <!-- Column 4 -->
+      <span class="lineup-name" role="listitem" data-video="videos/NATALY.mp4">Nataly</span>
+      <span class="lineup-name" role="listitem" data-video="videos/HADAR.mp4">Hadar</span>
+      <span class="lineup-name" role="listitem" data-video="videos/NETA.mp4">Neta</span>
+      <span class="lineup-name" role="listitem" data-video="videos/SHAKED.mp4">Shaked</span>
+      <span class="lineup-name" role="listitem" data-video="videos/KATYA.mp4">Yuli</span>
+    </div>
+  </main>
+
+  <!-- Video overlay: shown on hover over a name -->
+  <div class="lineup-video-overlay" id="lineup-video-overlay" aria-hidden="true">
+    <video id="lineup-video-player" class="lineup-video-player" muted loop playsinline></video>
+  </div>
+
+  <footer class="site-footer site-footer--dark site-footer--lineup">
+    <p class="site-footer-text">absTime</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="lineup.js"></script>
+</body>
+</html>
