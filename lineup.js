@@ -32,4 +32,15 @@
       hideVideo();
     });
   });
+
+  // Preload first few videos in the background so hover playback starts faster
+  var preloadCount = 5;
+  for (var i = 0; i < names.length && i < preloadCount; i++) {
+    var src = names[i].getAttribute('data-video');
+    if (!src) continue;
+    var preload = document.createElement('video');
+    preload.preload = 'auto';
+    preload.src = src;
+    preload.load();
+  }
 })();

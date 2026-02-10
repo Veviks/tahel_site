@@ -15,6 +15,8 @@
     })();
   </script>
   <link rel="stylesheet" href="styles.css">
+  <!-- Preload intro video so it starts playing faster -->
+  <link rel="preload" href="videos/INTRO.mp4" as="video" type="video/mp4">
 </head>
 <body class="page-intro">
   <!-- Frame 1: black top bar (1920×116) with nav -->
@@ -35,6 +37,7 @@
       muted
       loop
       playsinline
+      preload="auto"
       aria-label="absTime intro"
     >
       <source src="videos/INTRO.mov" type="video/quicktime">
