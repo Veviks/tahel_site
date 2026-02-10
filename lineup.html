@@ -4,6 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>אתר לטידי – Line up</title>
+  <script>
+    (function() {
+      var p = location.pathname;
+      if (p.indexOf('tahel_site') !== -1) {
+        var base = location.origin + (p.split('tahel_site')[0] + 'tahel_site/');
+        document.write('<base href="' + base + '">');
+      }
+    })();
+  </script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="page-lineup">
